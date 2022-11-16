@@ -1,0 +1,20 @@
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 1920px;
+}
+.header{
+    display: flex;
+    margin: auto;
+}
+.hlist{
+    text-align: left;
+}
+.hlist ul li{
+    float: left;
+}
