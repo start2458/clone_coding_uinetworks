@@ -44,6 +44,9 @@ a{
 .hlist a{
     color:black;
 }
+.hlist a:hover{
+    color: #5656fd;
+}
 /* slide */
 .banner {
     padding-top: 4%;
@@ -272,6 +275,15 @@ a{
     background-color: #5656fd;
     text-align: center;
 }
+.big_data p{
+    padding: 10px;
+    text-align: center;
+}
+.big_data p>span{
+    line-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
 .business_div .chat_bot{
     width: 311px;
     height: 663px;
@@ -290,7 +302,45 @@ a{
     background-color: #5656fd;
     text-align: center;
 }
+.chat_bot p{
+    padding: 10px;
+    text-align: center;
+}
+.chat_bot p>span{
+    line-height: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
 .business_div a:hover{
     transition: 0.5s;
     background-color: #ffb300;
+}
+.business_hr{
+    width: 100%;
+    border: 20px solid black;
+}
+.RECRUIT{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(237, 244, 246);
+}
+.RECRUIT h2{
+    padding: 15px 15px 0 15px;
+    font-size: 42px;
+    text-align: center;
+}
+.RECRUIT hr{
+    border: 2px solid black;
+    margin: 0 49%;
+}
+.RECRUIT p{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 17px;
+}
+.map{
+    width: 100%;
+}
+.map .real_map{
+    width: 100%;
 }
