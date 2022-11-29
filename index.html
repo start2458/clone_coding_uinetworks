@@ -4,22 +4,123 @@
     <meta charset="UTF-8">
     <title>clone_uinetworks</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
 </head>
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="hlogo">
-                <img src="images/hlogo.png" alt="hlogo"/>
-            </div>
-            <div class="hlist">
-                <ul>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">사업부문/수행실적</a></li>
-                    <li><a href="#">인재채용</a></li>
-                    <li><a href="#">오시는길</a></li>
-                </ul>
+            <div class="header_flex">
+                <div class="hlogo">
+                    <img src="images/hlogo.png" alt="hlogo"/>
+                </div>
+                <div class="hlist">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">사업부문 / 수행실적</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <section class="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <p class="img1_p">
+                        스마트 교차로와 3D 시뮬레이션을 활용한 교통관리 솔루션 <br>
+                        <span>UINI Traffic +</span><br>
+                    </p>
+                    <p class="img1_p1">
+                        - AI 기반 신호운영 최적화 <br>
+                        - 메타버스 기반 교통운영관리
+                    </p>
+                    <img src="images/imgSlide1.webp" alt="img1">
+                </div>
+                <div class="slideImg">
+                    <p class="img2_p">
+                        AI, 시각화<br>
+                        <span>빅데이터</span><br>
+                    </p>
+                    <p class="img2_p2">
+                        - 교통카드 및 통신 빅데이터 분석 <br>
+                        - GIS 기반의 융복합 시각화 솔루션 <br>
+                        - R, 케라스, Tensorflow 등 AI 기술 접목
+                    </p>
+                    <img src="images/imgSlide2.webp" alt="img2">
+                </div>
+                <div class="slideImg">
+                    <p class="img3_p">
+                        설치가 필요없는 편리한<br>
+                        <span>Chat Bot</span><br>
+                    </p>
+                    <p class="img3_p3">
+                        "All in One Chatbot" <br>
+                        - 카카오톡, 페이스북, PC Web, App 기반 챗봇<br>
+                        - 통합 대시보드 및 관리자 페이지 제공 <br>
+                        - 구축형 (On-Premise) 챗봇
+                    </p>
+                    <img src="images/imgSlide3.webp" alt="img3">
+                </div>
+                <button class="lbtn" data-testid="prevButton" aria-label="이전" class="_3VTyv DdGao">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+                        <path class="white" d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+                    </svg>
+                </button>
+                <button class="rbtn" data-testid="nextButton" aria-label="다음" class="_3VTyv _2D94o">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+                        <path class="white" d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="UIhis">
+            <div class="history">
+                <h2>
+                    2015년 설립된 (주)유아이네트웍스는 교통 분야에서 <br>
+                    노하우를 쌓아온 교통 특화 ICT 전문 기업입니다.
+                </h2>
+                <hr>
+                <table>
+                    <tr>
+                        <th>2015</th>
+                        <td>
+                            유아이네트웍스 설립 <br>
+                            [빅데이터] 서울 버스운영최적화 프로그램 개발
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2017</th>
+                        <td>
+                            유아이네트웍스 설립 <br>
+                            [빅데이터] 서울 버스운영최적화 프로그램 개발
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2018</th>
+                        <td>
+                            [챗       봇] KaKao I open builder기반 챗봇 개발
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2019</th>
+                        <td>
+                            [빅데이터] 연락운임 정산 및 1일 단위 정산 프로그램 개발 <br>
+                            [빅데이터/챗봇] 서울시 녹색교통진흥지역 자동차통행관리 빅데이터 및 챗봇 개발 <br>
+                            [빅데이터/챗봇] 초소형 전기차 이동서비스 실증사업
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2020</th>
+                        <td>
+                            [모빌리티] 마카롱택시 관제 플랫폼 개발 <br>
+                            [빅데이터] 통신빅데이터 기반 도시철도의사결정지원시스템 구축사업 수주 <br>
+                            ​[모빌리티] 포스트 코로나19(감염병) 대비 대중교통 안심이용 서비스 개발(마이데이터)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
