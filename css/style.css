@@ -14,7 +14,7 @@ a{
 .wrap{
     display: flex;
     flex-wrap: wrap;
-    width: 1903px;
+    width: 100%;
     height: 100%;
 }
 .header{
@@ -47,27 +47,44 @@ a{
 .hlist a:hover{
     color: #5656fd;
 }
+.hlist .hmenu{
+    position: relative;
+}
+.hlist li ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    height: 150px;
+}
+.hlist li ul.submenu li{
+    text-align: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.hlist li ul.submenu li:first-child{
+    margin-top: 30px;
+}
 /* slide */
 .banner {
     padding-top: 4%;
     width: 100%;
-    height: 855px;
+    height: 865px;
     text-align: center;
     overflow: hidden;
 }
 .banner .slideList {
     width: 100%;
-    height: 855px;
+    height: 865px;
 }
 .banner .slideList .slideImg {
     width: 100%;
     position: relative;
     float: left;
 }
-.banner .slideList .slideImg img {
-    display: block;
-    width: 1920px;
-    height: 855px;
+.banner .slideList .slideImg img {   
+    width: 100%;
+    height: 865px;
 }
 .slideImg .img1_p{
     position: absolute; /* 글씨 정중앙 오게 하는법 */
@@ -184,22 +201,23 @@ a{
     transform: rotate(180deg);
 }
 .UIhis{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 500px;
     background-color: rgb(237, 244, 246);
 }
 .history{
-    width: 700px;
+    width: 900px;
     height: 450px;
     margin-top: 25px;
-    margin-left: 27%;
 }
 .history h2{
     font-size: 26px;
     line-height: 30px;
 }
 .history hr{
-    margin: 15px 110px 0 0;
+    margin: 15px 35% 0 0;
     border: 1px solid black;
 }
 .history tr{
@@ -226,6 +244,7 @@ a{
 }
 .business_div{
     display: flex;
+    justify-content: center;
     margin-top: 15px;
 }
 .business_div .mobility{
@@ -233,7 +252,6 @@ a{
     width: 311px;
     height: 663px;
     margin: 10px;
-    margin-left: 24%;
     box-shadow: 0 0 2px gray;
 }
 .mobility a{
@@ -343,10 +361,10 @@ a{
 .recruit_div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 750px;
     height: 450px;
-    margin-left: 32%;
+    margin: 0 auto;
 }
 .recruit_div p{
     line-height: 20px;
@@ -394,14 +412,21 @@ a{
     width: 50px;
     height: 50px;
 }
-.form_btn{
+.recruit_div .form_btn{
     cursor: pointer;
-    padding: 10px;
-    margin-left: 65%;
+    padding: 10px 15px;
+    margin-left: 70%;
     background-color: #0000ff71;
     border: none;
     box-shadow: 1px 1px 1px 1px #0000ff5f;
     color: white;
+}
+.form_btn:hover{
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    box-shadow: none;
+    transition: 0.3s;
 }
 .map{
     width: 100%;
@@ -413,20 +438,29 @@ a{
     height: 450px;
     border-bottom: 1px solid black;
 }
+.link p{
+    width: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+.link p:hover{
+    color: rgba(0, 0, 0, 0.4)
+}
 .footer{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 430px;
     background-color: rgb(237, 244, 246);
 }
 .footer .fdiv{
-    width: 25%;
+    width: 900px;
     height: 80%;
-    margin-top: 2%;
-    margin-left: 25%;
+    margin-top: 30px;
 }
 .fdiv .fdiv_hr{
     border: 1px solid black;
-    margin-right: 430px;
+    margin-right: 94%;
     margin-top: 10px;
 }
 .fdiv p{
@@ -438,6 +472,7 @@ a{
 }
 .fdiv u{
     padding: 0 5px;
+    cursor: pointer;
 }
 .fdiv u:first-child{
     padding-left: 0;
