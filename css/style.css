@@ -180,7 +180,7 @@ a{
 .lbtn{
     position: absolute;
     left: 5%;
-    top: 48%;
+    top: 450px;
     padding: 0 10px;
     width: 50px;
     height: 50px;
@@ -191,7 +191,7 @@ a{
 .rbtn{
     position: absolute;
     right: 5%;
-    top: 48%;
+    top: 450px;
     padding: 0 10px;
     width: 50px;
     height: 50px;
